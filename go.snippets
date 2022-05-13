@@ -1,0 +1,11 @@
+snippet test
+func Test${1:Function}(t *testing.T) {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet tr
+t.Run("${0}", func(t *testing.T){
+
+})
+endsnippet
