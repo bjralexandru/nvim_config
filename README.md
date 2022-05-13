@@ -107,13 +107,37 @@ Also, in the plug-ins list you'll also notice that your Nvim will have vim-go in
 
 Next, when inside a new nvim file run:
 
+```
 :GoInstallBinaries
+```
 
 ### Also install npm:
 
 ```
 sudo apt install npm
 ```
+====================================================================================
+
+### To make snippets work: 
+
+Create this folder 
+
+```
+sudo mkdir ~/.config/nvim/ultisnips
+```
+Next copy the python.snippets and go.snippets files from this repo to that folder 
+
+```
+cp -R [~path/to/python.snippets] ~/.config/nvim/ultisnips/python.snippets
+```
+```
+cp -R [~path/to/go.snippets] ~/.config/nvim/ultisnips/go.snippets
+```
+Check ```nvim ~/.config/nvim/init.vim``` to see the mappings used to access the plugins. 
+
+You can build your own snippets by following the examples in those files or check the [Ultisnips`s Repo](https://github.com/SirVer/ultisnips).
+
+
 
 # That should be all. Might've forgot some things, but I'm pretty sure they are small and easy to fix.
 
