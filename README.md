@@ -3,35 +3,55 @@
 
 ### Install Neovim 0.7.0
 
-0) ```sudo apt install curl```
+Step 0)
 
-1) ```curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+```
+sudo apt install curl
+```
+Setp 1) 
+
+```
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
-./nvim.appimage```
+./nvim.appimage
+```
 
 For me the command "./nvim.appimage" doesn't work so try:
 
-2) ```./nvim.appimage --appimage-extract```
-   ```./squashfs-root/AppRun --version```
+Step 2) 
+```
+./nvim.appimage --appimage-extract
+```
 
-3) Run nvim globally.
+```
+./squashfs-root/AppRun --version
 
-i)   ```mv squashfs-root /```
-ii)  ```ln -s /squashfs-root/AppRun /usr/bin/nvim```
-iii) ```nvim``` 
+```
+
+Step 3) Run nvim globally.
+ 
+```
+mv squashfs-root /
+```
+```
+ln -s /squashfs-root/AppRun /usr/bin/nvim
+```
+```
+nvim
+``` 
 
 ====================================================================================
 
 ### First make an init.vim file inside .config
 
-4) i)  ``` cd ~/.config```  
-   ii) ```mkdir nvim``` 
-   iii)```cd nvim``` 
-   iv) ```nvim init.vim``` 
+4) i)  ```cd ~/.config```  
+   ii)  ```mkdir nvim``` 
+   iii) ```cd nvim``` 
+   iv)  ```nvim init.vim``` 
    
 5) These are my prefered configs which I've seen at [@ThePrimeagen](https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw)
 
-Copy my init.vim file and put into ```~/.config/nvim``` 
+   Copy my init.vim file and put into ```~/.config/nvim``` 
 
  
 ====================================================================================
@@ -64,7 +84,7 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 7) Run: nvim ``` ~/.config/nvim/init.vim ``` 
 
-And then run ```:PlugInstall``` 
+   And then run ```:PlugInstall``` 
  
 8) Save it ```:w``` and reload ```:so %```
 
