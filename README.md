@@ -91,6 +91,36 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ====================================================================================
 
 ### For Python development: 
+```
+sudo apt install python3.10
+```
+
+```
+sudo apt install pynvim
+```
+### For Golang development:
+
+```
+sudo apt install golang-go
+```
+Also, in the plug-ins list you'll also notice that your Nvim will have vim-go installed 
+
+Next, when inside a new nvim file run:
+
+:GoInstallBinaries
+
+### Also install npm:
+
+```
+sudo apt install npm
+```
+
+# That should be all. Might've forgot some things, but I'm pretty sure they are small and easy to fix.
+
+#### If anything run ```:checkhealth``` inside a nvim file and it will tell you what else you should do.
+
+
+
 
  
 
